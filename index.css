@@ -66,3 +66,124 @@ body{
     margin-left:0px;
     padding: 0%;
 }
+
+/* Mobile Responsive Media Queries */
+@media screen and (max-width: 768px) {
+    body {
+        width: 100% !important;
+        height: auto !important;
+        background-size: cover;
+        background-position: center;
+        display: block;
+        padding: 10px;
+    }
+    
+    .day0 {
+        margin-left: 0 !important;
+        margin-top: 20px !important;
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .myheading1 {
+        font-size: 24px !important;
+        display: block !important;
+        text-align: center;
+        line-height: 1.3;
+    }
+    
+    .myheading2 {
+        font-size: 16px !important;
+        text-align: center;
+        line-height: 1.4;
+    }
+    
+    .da {
+        margin-top: 30px !important;
+        width: 100%;
+    }
+    
+    .mainhead {
+        font-size: 22px !important;
+        text-align: center;
+    }
+    
+    .cont {
+        font-size: 14px !important;
+        margin-left: 0 !important;
+        width: 100% !important;
+        text-align: left;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        padding: 10px;
+    }
+    
+    .tourimgp {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: auto !important;
+        gap: 10px;
+        justify-items: center;
+    }
+    
+    .imgpt {
+        width: 100% !important;
+        max-width: 300px;
+        height: auto !important;
+        margin: 5px 0 !important;
+    }
+    
+    .tourvid1 {
+        margin-left: 0 !important;
+        width: 100%;
+    }
+    
+    video {
+        width: 100% !important;
+        height: auto !important;
+    }
+    
+    pre {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
+}
+
+/* For very small phones */
+@media screen and (max-width: 480px) {
+    .myheading1 {
+        font-size: 20px !important;
+    }
+    
+    .myheading2 {
+        font-size: 14px !important;
+    }
+    
+    .mainhead {
+        font-size: 18px !important;
+    }
+    
+    .cont {
+        font-size: 12px !important;
+    }
+    
+    .imgpt {
+        max-width: 250px;
+    }
+}
+
+/* For landscape orientation on mobile */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    body {
+        height: auto !important;
+        min-height: 100vh;
+    }
+    
+    .day0 {
+        margin-top: 10px !important;
+    }
+    
+    .da {
+        margin-top: 20px !important;
+    }
+}
