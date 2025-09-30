@@ -148,27 +148,140 @@ body{
         word-wrap: break-word;
     }
 }
-
-/* For very small phones */
-@media screen and (max-width: 480px) {
+/* Mobile Responsive Media Queries - LARGER FONTS */
+@media screen and (max-width: 768px) {
+    body {
+        width: 100% !important;
+        height: auto !important;
+        background-size: cover;
+        background-position: center;
+        display: block;
+        padding: 15px;
+    }
+    
+    .day0 {
+        margin-left: 0 !important;
+        margin-top: 20px !important;
+        width: 100%;
+        padding: 15px;
+    }
+    
     .myheading1 {
-        font-size: 20px !important;
+        font-size: 32px !important; /* Increased from 24px */
+        display: block !important;
+        text-align: center;
+        line-height: 1.3;
+        font-weight: bold;
     }
     
     .myheading2 {
-        font-size: 14px !important;
+        font-size: 20px !important; /* Increased from 16px */
+        text-align: center;
+        line-height: 1.4;
+        color: #333;
+    }
+    
+    .da {
+        margin-top: 40px !important; /* More spacing */
+        width: 100%;
     }
     
     .mainhead {
-        font-size: 18px !important;
+        font-size: 28px !important; /* Increased from 22px */
+        text-align: center;
+        font-weight: bold;
+        color: #e74c3c;
+        margin-bottom: 15px;
     }
     
     .cont {
-        font-size: 12px !important;
+        font-size: 18px !important; /* Increased from 14px - MUCH LARGER */
+        margin-left: 0 !important;
+        width: 100% !important;
+        text-align: left;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        padding: 15px;
+        line-height: 1.6; /* Better line spacing */
+        background-color: rgba(255, 255, 255, 0.8); /* Light background for better readability */
+        border-radius: 10px;
+    }
+    
+    .specialp {
+        font-size: 20px !important; /* Larger special text */
+        font-weight: bold;
+        text-align: center;
+        display: block;
+        margin-top: 15px;
+    }
+    
+    .tourimgp {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: auto !important;
+        gap: 15px;
+        justify-items: center;
+        margin: 20px 0;
     }
     
     .imgpt {
-        max-width: 250px;
+        width: 100% !important;
+        max-width: 320px; /* Slightly larger images */
+        height: auto !important;
+        margin: 10px 0 !important;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    
+    .tourvid1 {
+        margin-left: 0 !important;
+        width: 100%;
+    }
+    
+    video {
+        width: 100% !important;
+        height: auto !important;
+        border-radius: 10px;
+        margin: 15px 0;
+    }
+    
+    pre {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        font-size: 18px !important; /* Ensure pre tags also have large font */
+        line-height: 1.6;
+    }
+}
+
+/* For very small phones - LARGER FONTS */
+@media screen and (max-width: 480px) {
+    .myheading1 {
+        font-size: 28px !important; /* Increased from 20px */
+    }
+    
+    .myheading2 {
+        font-size: 18px !important; /* Increased from 14px */
+    }
+    
+    .mainhead {
+        font-size: 24px !important; /* Increased from 18px */
+    }
+    
+    .cont {
+        font-size: 16px !important; /* Increased from 12px */
+        padding: 12px;
+    }
+    
+    .specialp {
+        font-size: 18px !important;
+    }
+    
+    .imgpt {
+        max-width: 280px;
+    }
+    
+    pre {
+        font-size: 16px !important;
     }
 }
 
@@ -180,10 +293,34 @@ body{
     }
     
     .day0 {
-        margin-top: 10px !important;
+        margin-top: 15px !important;
     }
     
     .da {
-        margin-top: 20px !important;
+        margin-top: 25px !important;
+    }
+    
+    .cont {
+        font-size: 16px !important; /* Slightly smaller in landscape */
+        padding: 10px;
+    }
+}
+
+/* Extra large fonts for very small screens but with good readability */
+@media screen and (max-width: 360px) {
+    .myheading1 {
+        font-size: 26px !important;
+    }
+    
+    .myheading2 {
+        font-size: 17px !important;
+    }
+    
+    .mainhead {
+        font-size: 22px !important;
+    }
+    
+    .cont {
+        font-size: 16px !important;
     }
 }
